@@ -179,3 +179,6 @@ Inf # in R this represents infinity
 # Extras from Swirl 6
 x[-2] # returns all the elements of x except the second one
 identical(x,y) # returns TRUE if the arguments are identical
+
+# Extras from Swirl 7
+attributes() # Shows all the attributes of an object
