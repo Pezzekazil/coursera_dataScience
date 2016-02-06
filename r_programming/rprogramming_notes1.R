@@ -171,3 +171,11 @@ rep(c(0,1,2), each = 10)
 # Extras from Swirl 4
 paste(c("a", "b", "c"), collapse = " ") # returns all the elements of the vector with a space in between them. Class() = Char
 paste("Hello", "World!", sep = " ") # in case you don't want to use a vector (?)
+
+# Extras from Swirl 5
+sample(c(1,2,3,4,5), 2) # takes a sample of size 2 from the vector in the argument
+Inf # in R this represents infinity
+
+# Extras from Swirl 6
+x[-2] # returns all the elements of x except the second one
+identical(x,y) # returns TRUE if the arguments are identical
