@@ -1,0 +1,40 @@
+date will print the date today
+
+GITHUB
+fork means copying an existing remote repo on your machine (the command is git clone)
+
+to link a local repo with a remote repo type:
+git remote add origin <<URL>>
+
+git add . #adds all new files
+git add -u #updates tracking for files that changed names or were deleted
+git add -A #does both of the previous
+
+git commit -m "message" #updates the local repo, not the remote repo on Github
+
+git push #updates the remote repo
+
+git checkout -b branchname #creates a new branch
+
+git branch #shows the active branch
+
+git checkout master #switch back to the master branch
+
+MARKDOWN
+These files have the .md extension. Github interprets this and displays nice headings and text formatting
+## This is a secondary heading
+### This is a tertiary heading
+
+* first item in a list
+* second item in list
+* third item in list
+
+R
+available.packages() #returns all the available packages in the CRAN repo
+install.packages("packagename") #this installs a package in R
+
+source("http://bioconductor.org/biocLite.R") #adds this URL to the list to check
+biocLite() #installs basic packages
+bioLite(c("GenomicFeatures", "AnnotationDbi")) #installs these packages through bioconductor
+library() #allows to load packages in R
+search() shows all the functions exported by a package just loaded (on the top)
