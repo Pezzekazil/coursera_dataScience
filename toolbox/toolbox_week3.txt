@@ -1,0 +1,15 @@
+There are different types of data science problems (easy to difficult):
+Descriptive - you describe what a dataset is but you do not explain what this could mean. Normally what they do at census
+Exploratory - Look at some data and find relationships that you didn't know about previously but not necessarily confirm them (correlation does not imply causation)
+Inferential - a small sample says something about a larger population. Most of statistics focus on this
+Predictive - use data on some objects to predict values for another object (prediction is not causation)
+Causal - what happens to one variable when you make another variable change
+Mechanistic - understand the exact changes in variables that lead to changes in other variables for individual objects
+
+Data are values of qualitative or quantitative variables (measurement), belonging to a set of items (population)
+
+Most important things in data science:
+1. Question
+2. Data
+
+
