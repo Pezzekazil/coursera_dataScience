@@ -12,4 +12,32 @@ Most important things in data science:
 1. Question
 2. Data
 
+Big data is a relative concept. It will become small with technology advancement. Also, you don't necessarily need to use a very complicated data collection system: for most purpuses Hadoop is not necessary.
 
+EXPERIMENTAL DESIGN
+issue of confounding:
+in a study you look for a correlation between shoe size and literacy. There could be a factor (age) that is counfounding: this factor is the cause of both the factor in analysis.
+
+Randomization and blocking:
+to make an experiment repeteable you can
+1. fix a variable (all chimp are males)
+2. stratify a variable (equal proportion male female in two groups)
+3. if you can't fix a variable, randomize it
+
+For a prediction study:
+Probability/sampling
+we need a training set that contains the same proportions of the population. Otherwise we overfit the predictive model
+Also, in a prediction problem, the values of the output variable need to be separated (attribution of an element to a class). If the value has a good chance to belong to either the classes, then prediction doesn't work well.
+	Disease +	Disease -
+Test +	TP		FP
+Test -	FN		TN
+
+Good experiments have:
+1. Replication
+2. Measure variability
+3. Generalize to the problem you care about
+4. Are Transparent
+
+Prediction is not inference
+ - both important
+Beware of data dredging
