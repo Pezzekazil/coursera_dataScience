@@ -6,13 +6,17 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   ## Return the mean of pollutant across all monite in the id vector (ignoring NA values). DO NOT ROUND RESULTS
   my_data <- list()
   n <- 1
-  for (file_name in dir(test_directory)) {    
-    if (any(id == substr(file_name, 1,3))) {
-      my_data[[n]] <- read.csv(paste(test_directory, "/", file_name, sep = ""), header = TRUE)
+  file_list <- paste(test_directory, "/", substr(dir(test_directory),1,3)[id], ".csv", sep ="")
+  for (file_name in file_list) {    
+      my_data[[n]] <- read.csv(file_name, header = TRUE)[,pollutant]
       n <- n + 1
-    }
   }
-  my_data
+  mean(unlist(my_data), na.rm = TRUE)
 }
-test_directory <- c("C:/Users/PiergiorgioC/Documents/pollutant/specdata")
-a <- pollutantmean(test_directory, c("sulfate"))
+
+test_directory <- c("/home/piergiorgio/coursera_dataScience/r_programming/w2_assignment/dataset")
+a <- pollutantmean(test_directory, c("nitrate"), 1:332)
+
+
+
+
