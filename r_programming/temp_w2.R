@@ -11,12 +11,15 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
       my_data[[n]] <- read.csv(file_name, header = TRUE)[,pollutant]
       n <- n + 1
   }
-  mean(unlist(my_data), na.rm = TRUE)
+  bad <- is.na(as.vector(unlist(my_data)))
+  unlist(a)[!bad]
+  #mean(unlist(my_data), na.rm = TRUE)
+  #my_data
 }
 
 test_directory <- c("/home/piergiorgio/coursera_dataScience/r_programming/w2_assignment/dataset")
-a <- pollutantmean(test_directory, c("nitrate"), 1:332)
-
-
+a <- pollutantmean(test_directory, c("nitrate"), 1:2)
+bad <- is.na(as.vector(unlist(a)))
+unlist(a)[!bad]
 
 
