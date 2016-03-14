@@ -51,3 +51,13 @@ Noramlly we want:
 2. The input for the script is the raw data
 3. The output is the processed, tidy data
 4. There are no parameters to the script
+
+##Downloading files
+This lecture is about how to download files with R  
+You can use absolute and relative paths when getting or setting a working directory.  
+In order to make the script independent from location, you can use the commands:  
+1. `r file.exist()`, which can check for directories existance as well
+2. `r dir.create()`
+To download files we will use `r download.file(url, destfile, method="curl")`.  
+`r list.files()` lists the files in a specific path.  
+`date()` returns the data right now, and it is useful to keep track of the version of the file you downloaded.  
