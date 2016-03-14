@@ -65,6 +65,6 @@ To download files we will use `download.file(url, destfile, method="curl")`.
 
 ##Reading local Files
 To perform this we use `read.table()`, but remember that this reads data into RAM, so large datasets may represent a challenge.
-An alternative is to use read.csv, which sets `sep=",", header=TRUE`.
-An important parameter is `na.strings`, which explains to R which value in our dataset represent an NA.  
-Another important parameter is `quotes`, which allow you to specify which kind of quotation marks are quotation marks, " or '.
+An alternative is to use read.csv, which sets `sep=",", header=TRUE`.  
+An important parameter is `na.strings`, which explains to R which value in our dataset represent an NA.
+Another important parameter is `quotes`, which allow you to specify which kind of quotation marks are quotation marks, " or '.  
