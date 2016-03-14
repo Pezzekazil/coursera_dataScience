@@ -57,8 +57,8 @@ Noramlly we want:
 This lecture is about how to download files with R  
 You can use absolute and relative paths when getting or setting a working directory.  
 In order to make the script independent from location, you can use the commands:  
-1. `r file.exist()`, which can check for directories existance as well  
-2. `r dir.create()`  
-To download files we will use `r download.file(url, destfile, method="curl")`.  
-`r list.files()` lists the files in a specific path.  
+1. `file.exist()`, which can check for directories existance as well  
+2. `dir.create()`  
+To download files we will use `download.file(url, destfile, method="curl")`.  
+`list.files()` lists the files in a specific path.  
 `date()` returns the data right now, and it is useful to keep track of the version of the file you downloaded.  
