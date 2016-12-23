@@ -22,13 +22,13 @@ library("swirl")
     for (i in 1:10) {
         print(i)
     }
-    
+
     x <- c("a", "b", "c", "d")
     for (i in 1:4) {
         print(x[i])
     }
     # seq_along take the length of the parameter and generate a seqence from 1 to that number
-    for (i in seq_along(x)) { 
+    for (i in seq_along(x)) {
         print (x[i])
     }
     for(letter in x) {
@@ -46,7 +46,7 @@ library("swirl")
 # Control Structures: Repeat, Next, Break
     x0 <- 1
     tol <- 1e-8
-    
+
     repeat{
         x1 <- computeEstimate() # this is not a real function
         if(abs(x1-x0) < tol) {
@@ -55,7 +55,7 @@ library("swirl")
             x0 <- x1
         }
     }
-    
+
     for (i in 1:100) {
         if (i <= 20) {
             ## skip the first 20 iteratioins
@@ -63,7 +63,7 @@ library("swirl")
         }
         ## do something here
     }
-    
+
     # "return" signals that a function should exit and return a given value
     # control structures are good for more sophisticated programs, but for command line the *apply functions are better for iterating
 
@@ -71,17 +71,17 @@ library("swirl")
     add2 <- function(x,y) {
         x + y # the function returns whatever the last expression was
     }
-    
+
     above10 <- function(x) {
         use <- x > 10
         x[use]
     }
-    
+
     above <- function(x, n = 10) { # = 10 sets a default value for n, which you can overwrite
         use <- x > n
         x[use]
     }
-    
+
     colummean <- function(y, removeNA = TRUE) {
         nc <- ncol(y)
         means <- numeric(nc)
@@ -102,7 +102,7 @@ library("swirl")
         print(b) # This generates an error but only after a is printed
     }
     f(45)
-    
+
     # The ... argument indicate a variable number of arguments that are usually passed on to other functions.
     # It is often used when extending another function and you don't want to copy the entire argument list of the original function
     my_plot <- function(x, y, type = "l", ...) {
@@ -165,7 +165,7 @@ library("swirl")
     # Limit the width of your code
     # Limit the length of your function
     # addittion - self describing naming
-    
+
 # Dates and times in R
     # R has a Date class
     as.Date("2016-02-28")
